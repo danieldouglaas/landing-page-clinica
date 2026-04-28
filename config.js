@@ -30,7 +30,9 @@ const DADOS = {
     "sobreMimImagem": "assets/foto_perfil.jpg",
 
     // Fotos do seu espaço/clínica para a Galeria
-    "galeriaImagem1": "assets/clinic_reception_1777127327768.png",
-    "galeriaImagem2": "assets/hero_dentist_family_1777127315265.png",
-    "galeriaImagem3": "assets/clinic_reception_1777127327768.png"
+    "galeriaImagem1": "assets/fachada_natural.png",
+    "galeriaImagem2": "assets/recepcao_natural.png",
+    "galeriaImagem3": "assets/interno_natural.png",
+    "galeriaImagem4": "assets/interno_2_natural.png",
+    "galeriaImagem5": "assets/recepcao_2_natural.png"
 };

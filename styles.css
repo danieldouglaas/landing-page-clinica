@@ -283,23 +283,118 @@ section {
     margin-bottom: 0;
 }
 
-/* Gallery Section */
-.gallery-container {
+/* Gallery Section - Carousel */
+.carousel-container {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: var(--radius);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+}
+
+.carousel-track {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+}
+
+.carousel-img {
+    grid-area: 1 / 1;
+    min-width: 100%;
+    height: 550px;
+    object-fit: contain;
+    background-color: transparent; /* Fundo transparente para se misturar ao site */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.6s ease-in-out, visibility 0.6s ease-in-out;
+}
+
+.carousel-img.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.85);
+    color: var(--color-cta);
+    border: none;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    cursor: pointer;
+    z-index: 10;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.carousel-btn:hover {
+    background-color: var(--color-cta);
+    color: #fff;
+    transform: translateY(-50%) scale(1.05);
+}
+
+.prev-btn {
+    left: 15px;
+}
+
+.next-btn {
+    right: 15px;
+}
+
+.carousel-indicators {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 10;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.dot.active {
+    background-color: var(--color-cta);
+    transform: scale(1.2);
+}
+
+
+
+/* Instagram Section */
+.instagram-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
+    justify-items: center;
+    margin-bottom: 20px;
 }
 
-.gallery-container .rounded-img {
-    height: 350px;
-    transition: transform 0.3s ease;
+.instagram-embed-container {
+    width: 100%;
+    max-width: 400px;
+    background-color: #fff;
+    border-radius: var(--radius);
+    overflow: hidden;
 }
 
-.gallery-container .rounded-img:hover {
-    transform: scale(1.03);
+.instagram-cta {
+    text-align: center;
+    margin-top: 40px;
 }
-
-
 
 /* Footer */
 .footer {
@@ -433,8 +528,8 @@ section {
         font-size: 2rem;
     }
     
-    .gallery-container {
-        grid-template-columns: 1fr;
+    .carousel-img {
+        height: 300px;
     }
     
     .footer-content {
