@@ -4,7 +4,7 @@ const DADOS = {
     // -----------------------------------------
     "nomeClinica": "Dental Dreams",
     "nomeCroProfissional": "Dra. Danielle Cruz | CRO-AM 8902",
-    "sobreMimTexto": "Sou a Dra. Danielle Cruz (CRO-AM 8902), e acredito que um sorriso saudável começa com um atendimento humanizado. Meu consultório foi pensado para oferecer o máximo de conforto e tranquilidade, garantindo que você e sua família se sintam acolhidos desde o primeiro momento. Conto com grande experiência e tecnologia de ponta para cuidar da sua saúde bucal e transformar o seu sorriso.",
+    "sobreMimTexto": "Sou a Dra. Danielle Cruz (CRO-AM 8902), e acredito que um sorriso saudável começa com um atendimento humanizado. Meu consultório foi pensado para oferecer o máximo de conforto e tranquilidade, garantindo que você e sua família se sintam acolhidos desde o primeiro momento. Conto com grande experiência e conhecimento técnico para cuidar da sua saúde bucal e transformar o seu sorriso.",
     "telefone": "(92) 98607-0067", // Seu telefone fixo ou celular
     "whatsappLink": "https://wa.me/5592986070067?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta.", // Link do WhatsApp com texto pronto
     "instagramUsuario": "@dradaniellemenezes_",
