@@ -12,7 +12,8 @@ const DADOS = {
     "cidade": "Itapiranga - AM",
     "endereco": "Rua Antônio Almeida Santos, 7, Centro, Itapiranga - AM, 69120-000",
     "enderecoLink": "https://www.google.com/maps/search/?api=1&query=R.+Antônio+Almeida+Santos,+7,+Itapiranga+-+AM,+69120-000",
-    "horarioSemana": "Segunda a Sexta: 09:00 às 17:00",
+    "horarioTerceiro": "Segunda, Terça e Sexta: 09:00 às 20:00",
+    "horarioSemana": "Quarta e Quinta: 09:00 às 17:00",
     "horarioFimDeSemana": "Sábado: 09:00 às 12:00",
 
     // -----------------------------------------
