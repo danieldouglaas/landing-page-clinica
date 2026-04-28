@@ -187,6 +187,7 @@ p {
     margin-bottom: 2rem;
     background: linear-gradient(45deg, #4A3B40, var(--color-cta));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     text-wrap: balance;
 }
@@ -416,9 +417,6 @@ section {
     margin-bottom: 1.5rem;
 }
 
-.contact-details {
-    /* removido display flex para empilhar verticalmente */
-}
 
 .contact-item {
     display: flex;
